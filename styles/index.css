@@ -1,66 +1,90 @@
-body {
-  font-family: "Play", sans-serif;
+.button {
+  width: 10.25em;
+  height: 2.75em;
+  border-radius: 0.5em;
+  background-color: #F58122;
+  color: #242530;
+  border: none;
+  border: 2px solid #F58122;
+  transition: 0.2s;
+}
+.button--small {
+  width: 8.62em;
+}
+.button--nobg {
+  background-color: transparent;
+  color: #fff;
+}
+.button:hover {
+  border: 2px solid #fff;
+}
+.button:focus {
+  background-color: #CA6D20;
+  color: #242530, 100%;
 }
 
-.navigation {
-  background-color: #242530;
+body {
+  font-family: "Play", sans-serif;
+  font-size: 1em;
+}
+
+header {
+  background: #fff url(../img/img-index/section1.png) no-repeat right top;
+  background-size: cover;
+  min-height: 45vw;
   color: #fff;
+}
+header .navigation {
+  background-color: #242530;
   position: absolute;
   font-family: "Source Sans Pro", sans-serif;
 }
-.navigation .navbar-expand-lg {
+header .navigation .navbar-expand-lg {
   justify-content: space-between;
 }
-.navigation .navbar-brand {
+header .navigation .navbar-brand {
   width: 15%;
   min-width: 200px;
 }
-.navigation .navbar-brand img {
+header .navigation .navbar-brand img {
   width: 100%;
 }
-.navigation .navbar-nav {
+header .navigation .navbar-nav {
   flex-grow: 1;
   justify-content: space-around;
   margin: auto 1em;
 }
-.navigation .navbar-nav .nav-link {
+header .navigation .navbar-nav .nav-link {
   color: white;
   cursor: pointer;
   padding-bottom: 3px;
 }
-.navigation .navbar-nav .nav-link:hover {
+header .navigation .navbar-nav .nav-link:hover {
   color: #F58122;
 }
-.navigation .navbar-nav .active:hover {
+header .navigation .navbar-nav .active:hover {
   color: #fff;
 }
-.navigation .navbar-nav .active::after {
+header .navigation .navbar-nav .active::after {
   content: "";
   height: 1px;
   width: 100%;
   display: block;
   background-color: #fff;
 }
-.navigation .navbar-player {
+header .navigation .navbar-player {
   display: flex;
   align-items: center;
 }
-.navigation .navbar-player .player-headline {
+header .navigation .navbar-player .player-headline {
   display: flex;
   flex-direction: column;
   margin-left: 1em;
 }
-
-header {
-  background: #fff url(../img/img-index/section1.png) no-repeat right top;
-  background-size: cover;
-  min-height: 45em;
-}
 header .first-section {
   background: transparent url(../img/elipsis-1.png) no-repeat center;
   background-size: contain;
-  min-height: 45em;
-  color: #fff;
+  min-height: 45vw;
 }
 header .first-section .row {
   min-height: 45em;
@@ -147,4 +171,93 @@ header .first-section .row .col-3 .volume-container .volume-wrapper input[type=r
 }
 header .first-section .row .col-3 .volume-container .volume-wrapper input[type=range]::-ms-fill-upper {
   background-color: #fff;
+}
+header .second-section {
+  position: relative;
+  bottom: -2.5em;
+}
+header .second-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .second-section .container .song-card {
+  background-color: #242530;
+  border-radius: 0.5em;
+  padding: 1.5em 2em;
+  min-width: 22em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .second-section .container .song-card .icon {
+  width: 1.5em;
+  height: 1.68em;
+}
+header .second-section .container .song-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+main .third-section {
+  margin: 5vw 0;
+}
+main .third-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .third-section .container .slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+main .third-section .container .slider-container .soon-container {
+  width: 22%;
+}
+main .third-section .container .slider-container .soon-container img {
+  width: 100%;
+}
+main .fourth-section {
+  background: #242530 url(../img/elipsis-2.png) no-repeat top;
+  background-size: contain;
+  min-height: 28vw;
+  color: #fff;
+}
+main .fourth-section .container {
+  min-height: 28vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .fourth-section .container .row {
+  text-align: center;
+  min-height: 15vw;
+}
+main .fourth-section .container .row .flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+main .fourth-section .container .row .flex-center span {
+  display: inline-block;
+}
+main .fourth-section .container .row .flex-center span::before {
+  content: "";
+  display: block;
+  width: 5em;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+main .fourth-section .container .row .col-1::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 0.1em;
+  background-color: rgba(255, 255, 255, 0.5);
 }

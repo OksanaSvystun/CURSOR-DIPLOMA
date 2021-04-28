@@ -1,67 +1,70 @@
+@import "./components/button.scss";
+
 body{
   font-family: 'Play', sans-serif;
-}
-
-.navigation{
-  background-color: #242530;
-  color: #fff;
-  position: absolute;
-  font-family: 'Source Sans Pro', sans-serif;
-  .navbar-expand-lg{
-    justify-content: space-between;
-  }
-  .navbar-brand{
-    width: 15%;
-    min-width: 200px;
-    img{
-      width: 100%;
-    }
-  }
-  .navbar-nav {
-    flex-grow: 1;
-    justify-content: space-around;
-    margin: auto 1em;
-    .nav-link{
-      color: white;
-      cursor: pointer;
-      padding-bottom: 3px;
-      &:hover{
-        color: #F58122;
-      }
-    }
-    .active{
-      &:hover{
-        color: #fff;
-      }
-      &::after{
-          content: '';
-          height: 1px;
-          width: 100%;
-          display: block;
-          background-color: #fff;
-      }
-    }
-  }
-  .navbar-player{
-    display: flex;
-    align-items: center;
-    .player-headline{
-      display: flex;
-      flex-direction: column;
-      margin-left: 1em;
-    }
-  }
+  font-size: 1em;
 }
 
 header{
   background: #fff url(../img/img-index/section1.png) no-repeat right top;
   background-size: cover;
-  min-height: 45em;
+  min-height: 45vw;
+  color: #fff;
+
+  .navigation{
+    background-color: #242530;
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    .navbar-expand-lg{
+      justify-content: space-between;
+    }
+    .navbar-brand{
+      width: 15%;
+      min-width: 200px;
+      img{
+        width: 100%;
+      }
+    }
+    .navbar-nav {
+      flex-grow: 1;
+      justify-content: space-around;
+      margin: auto 1em;
+      .nav-link{
+        color: white;
+        cursor: pointer;
+        padding-bottom: 3px;
+        &:hover{
+          color: #F58122;
+        }
+      }
+      .active{
+        &:hover{
+          color: #fff;
+        }
+        &::after{
+            content: '';
+            height: 1px;
+            width: 100%;
+            display: block;
+            background-color: #fff;
+        }
+      }
+    }
+    .navbar-player{
+      display: flex;
+      align-items: center;
+      .player-headline{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+      }
+    }
+  }
+
   .first-section{
      background: transparent url(../img/elipsis-1.png) no-repeat center;
     background-size: contain;
-    min-height: 45em;
-    color: #fff;
+    min-height: 45vw;
     .row{
       min-height: 45em;
       .col-5{
@@ -155,6 +158,98 @@ header{
                 background-color: #fff;
             }
           }          
+        }
+      }
+    }
+  }
+
+  .second-section{
+    position: relative;
+    bottom: -2.5em;
+    .container{
+      display: flex;
+      justify-content: space-between;
+      .song-card{
+        background-color: #242530;
+        border-radius: .5em;
+        padding: 1.5em 2em;
+        min-width: 22em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .icon{
+          width: 1.5em;
+          height: 1.68em;
+        }
+        &-info{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+main{
+  .third-section{
+    margin: 5vw 0;
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .slider-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2em;
+        .soon-container{
+          width: 22%;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .fourth-section{
+     background: #242530 url(../img/elipsis-2.png) no-repeat top;
+    background-size: contain;
+    min-height: 28vw;
+    color: #fff;
+    .container{
+      min-height: 28vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .row{
+        text-align: center;
+        min-height: 15vw;
+        .flex-center{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 2em;
+          span{
+            display: inline-block;
+            &::before{
+              content: '';
+              display: block;
+              width: 5em;
+              height: 1px;
+              background-color: rgba(255, 255, 255, 0.5);              
+            }
+          }
+        }
+        .col-1::before{
+          content: '';
+          display: block;
+          height: 100%;
+          width: 0.1em;
+          background-color: rgba(255, 255, 255, 0.5);
         }
       }
     }

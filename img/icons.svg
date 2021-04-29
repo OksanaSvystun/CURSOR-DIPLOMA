@@ -1,18 +1,18 @@
 <svg width="0" height="0" class="hidden">
 
 <!-- arrow-left -->
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32" id="arrow-left">
-    <path d="M14.223 0L0 16l14.223 16L16 30 3.555 16 16 2l-1.777-2z" fill="#6B6B6B"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32" id="arrow-left">
+    <path d="M14.223 0L0 16l14.223 16L16 30 3.555 16 16 2l-1.777-2z"></path>
   </symbol>
 
 <!-- arrow-right -->
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32" id="arrow-right">
-    <path d="M1.778 32L16 16 1.777 0 0 2l12.445 14L0 30l1.778 2z" fill="#242530"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32" id="arrow-right">
+    <path d="M1.778 32L16 16 1.777 0 0 2l12.445 14L0 30l1.778 2z"></path>
   </symbol>
 
 <!-- facebook -->
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32" id="facebook">
-    <path d="M4.084 32V16.985H0v-5.407h4.084V6.961C4.084 3.332 6.497 0 12.057 0c2.25 0 3.915.21 3.915.21l-.131 5.048s-1.698-.016-3.55-.016c-2.005 0-2.326.898-2.326 2.389v3.947H16l-.263 5.407H9.965V32h-5.88z" fill="#fff"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 32" id="facebook">
+    <path d="M4.084 32V16.985H0v-5.407h4.084V6.961C4.084 3.332 6.497 0 12.057 0c2.25 0 3.915.21 3.915.21l-.131 5.048s-1.698-.016-3.55-.016c-2.005 0-2.326.898-2.326 2.389v3.947H16l-.263 5.407H9.965V32h-5.88z"></path>
   </symbol>
 
 <!-- footer-location -->
@@ -80,9 +80,9 @@
   </symbol>
 
 <!-- playlist -->
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 28" id="playlist">
-    <path d="M17.6 21.863c0 3.384 2.517 6.137 5.611 6.137 3.095 0 5.611-2.753 5.611-6.137 0-.31-.043-.607-.084-.905h.062V3.5H32V0h-4.8a1.53 1.53 0 00-1.131.513c-.3.328-.469.773-.469 1.237v14.583a5.154 5.154 0 00-2.389-.606c-1.487.002-2.914.648-3.965 1.799-1.052 1.15-1.644 2.71-1.646 4.337zM0 1.75h22.4v3.5H0v-3.5z" fill="#fff"></path>
-    <path d="M0 8.75h22.4v3.5H0v-3.5zm0 7h14.4v3.5H0v-3.5zm0 7h14.4v3.5H0v-3.5z" fill="#fff"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 28" id="playlist">
+    <path d="M17.6 21.863c0 3.384 2.517 6.137 5.611 6.137 3.095 0 5.611-2.753 5.611-6.137 0-.31-.043-.607-.084-.905h.062V3.5H32V0h-4.8a1.53 1.53 0 00-1.131.513c-.3.328-.469.773-.469 1.237v14.583a5.154 5.154 0 00-2.389-.606c-1.487.002-2.914.648-3.965 1.799-1.052 1.15-1.644 2.71-1.646 4.337zM0 1.75h22.4v3.5H0v-3.5z"></path>
+    <path d="M0 8.75h22.4v3.5H0v-3.5zm0 7h14.4v3.5H0v-3.5zm0 7h14.4v3.5H0v-3.5z"></path>
   </symbol>
 
 <!-- play-maxy -->

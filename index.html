@@ -65,23 +65,24 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Купити атрибутику</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ENG</a>
-                <a class="nav-link" style="display: none" href="#">UA</a>
+              <li class="nav-item" id="language">
+                <a class="nav-link" href="#" id="eng">ENG</a>
+                <a class="nav-link display-false" href="#" id="ua">UA</a>
               </li>
             </ul>
             <div class="navbar-player">
-              <div class="player-playPause">
-                <img src="./img/play-mini.svg" alt="play" />
+              <div class="player-playPause" id="playPause-mini">
+                <img src="./img/play-mini.svg" alt="play" id="play-mini" />
                 <img
-                  style="display: none"
+                  class="display-false"
                   src="./img/pause-mini.svg"
                   alt="pause"
+                  id="pause-mini"
                 />
               </div>
               <div class="player-headline">
                 <span class="headline-subtitle"> Зараз грає </span>
-                <span class="headline-title"> Sia – My Old Santa...</span>
+                <span class="headline-title"> Sia – My Old Santa Claus</span>
               </div>
             </div>
           </div>
@@ -106,12 +107,17 @@
               </div>
             </div>
             <div class="col-3">
-              <div class="play-pause-container">
-                <img src="./img/img-index/play-maxy.png" alt="play" />
+              <div class="play-pause-container" id="playPause-maxy">
+                <img
+                  src="./img/img-index/play-maxy.png"
+                  alt="play"
+                  id="play-maxy"
+                />
                 <img
                   src="./img/img-index/pause-maxy.png"
                   alt="pause"
-                  style="display: none"
+                  class="display-false"
+                  id="pause-maxy"
                 />
               </div>
               <div class="volume-container">
@@ -171,23 +177,69 @@
         </div>
       </section>
     </header>
+
     <main>
       <section class="third-section">
-        <div class="container">
-          <h2>Скоро</h2>
-          <div class="slider-container">
-            <div class="soon-container">
-              <img src="./img/img-index/slider1.png" alt="soon">
+        <h2>Скоро</h2>
+        <div class="slider-container container-fluid">
+          <div
+            id="multiCarousel"
+            class="carousel slide w-100"
+            data-ride="carousel"
+          >
+            <div class="container">
+              <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block col-3"
+                    src="./img/img-index/slider1.png"
+                    alt="soon"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block col-3"
+                    src="./img/img-index/slider2.png"
+                    alt="soon"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block col-3"
+                    src="./img/img-index/slider3.png"
+                    alt="soon"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block col-3"
+                    src="./img/img-index/slider4.png"
+                    alt="soon"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="soon-container">
-              <img src="./img/img-index/slider2.png" alt="soon">
-            </div>
-            <div class="soon-container">
-              <img src="./img/img-index/slider3.png" alt="soon">
-            </div>
-            <div class="soon-container">
-              <img src="./img/img-index/slider4.png" alt="soon">
-            </div>
+
+            <a
+              class="carousel-control-prev"
+              href="#multiCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <svg class="icon">
+                <use xlink:href="./img/icons.svg#arrow-left"></use>
+              </svg>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#multiCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <svg class="icon">
+                <use xlink:href="./img/icons.svg#arrow-right"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -197,83 +249,296 @@
             <div class="col-5 flex-center">
               <h3>Замовити пісню</h3>
               <span></span>
-              <p>Даруйте собі та своїм близьким маленьку щоденну радість - замовляйте пісню на CID FM. І хай прибуде з вами магія радіо!</p>
+              <p>
+                Даруйте собі та своїм близьким маленьку щоденну радість -
+                замовляйте пісню на CID FM. І хай прибуде з вами магія радіо!
+              </p>
               <button class="button">Замовити</button>
             </div>
-            <div class="col-1 flex-center">
-            </div>
+            <div class="col-1 flex-center"></div>
             <div class="col-5 flex-center">
               <h3>Купити атрибутику</h3>
               <span></span>
-              <p>Ми підготували для вас дещо цікаве і дуже цінне для усіх поціновувачів радіо CID FM. Станьте частинкою рідної та унікальної радіоспільноти CID FM.</p>
+              <p>
+                Ми підготували для вас дещо цікаве і дуже цінне для усіх
+                поціновувачів радіо CID FM. Станьте частинкою рідної та
+                унікальної радіоспільноти CID FM.
+              </p>
               <button class="button">Замовити</button>
             </div>
           </div>
         </div>
       </section>
+      <section class="fifth-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <img src="./img/coop.jpg" alt="CID team" />
+            </div>
+            <div class="col-5">
+              <h3 class="title">Співпраця</h3>
+              <div class="info">
+                <h4 class="subtitle">
+                  Запрошуємо до співпраці рекламодавців, які турбуються про
+                  своїх клієнтів!
+                </h4>
+                <div class="info-container">
+                  <p>
+                    Пропонуємо: Аудіорекламу. Виробництво аудіороликів.
+                    Виробництво подкастів. Спонсорську підтримку програм. Стати
+                    гостем студії.
+                  </p>
+                  <p>
+                    Разом із нашими фахівцями ви зможете розробити ексклюзивну
+                    комунікаційну стратегію, враховуючи потреби нашої аудиторії
+                    та ваших клієнтів. Ба навіть створити новий радіопроєкт.
+                  </p>
+                </div>
+                <button class="button">Детально</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sixth-section">
+        <div class="container">
+          <h3>Програми та подкасти</h3>
+          <div class="pp-container">
+            <div class="img-container">
+              <img src="./img/pp/pp1.jpg" alt="podcast" />
+              <div class="img-text">
+                <h5>Район здорової людини</h5>
+                <p>Спростовуємо стереотипи про здоров’я</p>
+              </div>
+            </div>
+            <div class="img-container">
+              <img src="./img/pp/pp2.jpg" alt="podcast" />
+              <div class="img-text">
+                <h5>Район здорової людини</h5>
+                <p>Спростовуємо стереотипи про здоров’я</p>
+              </div>
+            </div>
+            <div class="img-container">
+              <img src="./img/pp/pp3.jpg" alt="podcast" />
+              <div class="img-text">
+                <h5>Район здорової людини</h5>
+                <p>Спростовуємо стереотипи про здоров’я</p>
+              </div>
+            </div>
+            <div class="img-container">
+              <img src="./img/pp/pp4.jpg" alt="podcast" />
+              <div class="img-text">
+                <h5>Район здорової людини</h5>
+                <p>Спростовуємо стереотипи про здоров’я</p>
+              </div>
+            </div>
+            <div class="img-container">
+              <img src="./img/pp/pp5.jpg" alt="podcast" />
+              <div class="img-text">
+                <h5>Район здорової людини</h5>
+                <p>Спростовуємо стереотипи про здоров’я</p>
+              </div>
+            </div>
+            <div class="img-container">
+              <img src="./img/pp/pp6.jpg" alt="podcast" />
+              <div class="img-text">
+                <h5>Район здорової людини</h5>
+                <p>Спростовуємо стереотипи про здоров’я</p>
+              </div>
+            </div>
+            <div class="img-container">
+              <img src="./img/pp/pp7.jpg" alt="podcast" />
+              <div class="img-text">
+                <h5>Район здорової людини</h5>
+                <p>Спростовуємо стереотипи про здоров’я</p>
+              </div>
+            </div>
+            <div class="img-container">
+              <img src="./img/pp/pp8.jpg" alt="podcast" />
+              <div class="img-text">
+                <h5>Район здорової людини</h5>
+                <p>Спростовуємо стереотипи про здоров’я</p>
+              </div>
+            </div>
+          </div>
+          <button class="button button--small">Більше</button>
+        </div>
+      </section>
+      <section class="seventh-section">
+        <div class="container">
+          <h3>Новини міста Луцьк</h3>
+          <div class="row">
+            <div class="col-4">
+              <div class="card card1">
+                <!-- <img
+                  src="./img/news/news1.jpg"
+                  class="card-img-top"
+                  alt="news"
+                /> -->
+                <div class="card-body">
+                  <div class="card-text">
+                    <p class="card-title">
+                      Схованка від дощу та місце для розвитку: про основні цілі
+                      та цінності Молодіжного центру Волині
+                    </p>
+                    <p class="card-info">
+                      Креативний простір для молоді у самому центр Луцька діє
+                      уже 5 років.
+                    </p>
+                  </div>
+                  <span>15:15 11.01.2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card card2">
+                <!-- <img
+                  src="./img/news/news2.jpg"
+                  class="card-img-top"
+                  alt="news"
+                /> -->
+                <div class="card-body">
+                  <div class="card-text">
+                    <p class="card-title">
+                      Схованка від дощу та місце для розвитку: про основні цілі
+                      та цінності Молодіжного центру Волині
+                    </p>
+                    <p class="card-info">
+                      Креативний простір для молоді у самому центр Луцька діє
+                      уже 5 років.
+                    </p>
+                  </div>
+                  <span>15:15 11.01.2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card card3">
+                <!-- <img
+                  src="./img/news/news3.jpg"
+                  class="card-img-top"
+                  alt="news"
+                /> -->
+                <div class="card-body">
+                  <div class="card-text">
+                    <p class="card-title">
+                      Схованка від дощу та місце для розвитку: про основні цілі
+                      та цінності Молодіжного центру Волині
+                    </p>
+                    <p class="card-info">
+                      Креативний простір для молоді у самому центр Луцька діє
+                      уже 5 років.
+                    </p>
+                  </div>
+                  <span>15:15 11.01.2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="button button--small">Більше</button>
+        </div>
+      </section>
     </main>
 
-    <!-- <footer>
+    <footer>
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <img src="./img/logo.png" width="208px" alt="logo"/>
+            <div class="logo-container">
+              <img src="./img/logo.png" alt="logo" />
+            </div>
             <div class="round-border">
-              <svg class="icon footer-facebook">
-              <use xlink:href="img/icons.svg#facebook"></use>
-            </svg>
+              <svg class="icon facebook">
+                <use xlink:href="img/icons.svg#facebook"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="col-4">
+            <h4>Контакти</h4>
+            <div class="info">
+              <div class="info-container">
+                <div class="icon-container">
+                  <svg class="icon">
+                    <use xlink:href="./img/icons.svg#footer-phone"></use>
+                  </svg>
+                </div>
+                <div class="info">
+                  <a href="tel:+38 (096) 869 6005" target="_blank"
+                    >+38 (096) 869 6005</a
+                  >
+                  <a href="tel:+38 (0332) 78 82 78" target="_blank"
+                    >+38 (0332) 78 82 78</a
+                  >
+                </div>
+              </div>
+              <div class="info-container">
+                <div class="icon-container">
+                  <svg class="icon">
+                    <use xlink:href="./img/icons.svg#footer-mail"></use>
+                  </svg>
+                </div>
+                <div class="info">
+                  <a href="mailto:radiosidfm@gmail.com" target="_blank"
+                    >radiosidfm@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="info-container">
+                <div class="icon-container">
+                  <svg class="icon">
+                    <use xlink:href="./img/icons.svg#footer-location"></use>
+                  </svg>
+                </div>
+                <div class="info">
+                  <a
+                    href="https://goo.gl/maps/3u3vAuakyGFUsjWf7"
+                    target="_blank"
+                    >вул.Конякіна,18в. Луцьк. Волинська обл.,Україна. 43024</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <h4>Меню</h4>
+            <div class="info">
+              <ul>
+                <li>
+                  <a href="#">Головна</a>
+                </li>
+                <li>
+                  <a href="#">Програми та подкасти</a>
+                </li>
+                <li>
+                  <a href="#">Плейлист</a>
+                </li>
+                <li>
+                  <a href="#">Співпраця</a>
+                </li>
+                <li>
+                  <a href="#">Замовити пісню</a>
+                </li>
+                <li>
+                  <a href="#">Купити атрибутику</a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="col-3">
-            <h5>Контакти</h5>
-            <ul>
-              <li class="contacts">
-                <svg class="icon footer-icon">
-                  <use xlink:href="./img/icons.svg#footer-phone"></use>
-                </svg>
-                <div class="phone-numbers">
-                  <span>+38 (096) 869 6005</span>
-                  <span>+38 (0332) 78 82 78</span>
-                </div>
-              </li>
-              <li class="contacts">
-                <svg class="icon footer-icon">
-                  <use xlink:href="./img/icons.svg#footer-mail"></use>
-                </svg>
-                <span>radiosidfm@gmail.com</span>
-              </li>
-              <li class="contacts">
-                <svg class="icon footer-icon" style="width: 24px">
-                  <use xlink:href="./img/icons.svg#footer-location"></use>
-                </svg>
-                <span>вул.Конякіна,18в. Луцьк. Волинська обл., Україна. 43024<span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <h5>Меню</h5>
-            <ul>
-              <li>Головна</li>
-              <li>Програми та подкасти</li>
-              <li>Плейлист</li>
-              <li>Співпраця</li>
-              <li>Замовити пісню</li>
-              <li>Купити атрибутику</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <button class="btn btn-outline-warning">Замовити пісню</button>
-            <button class="btn btn-outline-warning">Купити атрибутику</button>
+            <button class="button button--nobg">Замовити пісню</button>
+            <button class="button button--nobg">Купити атрибутику</button>
           </div>
         </div>
         <div class="row">
-          <p>
-            © Медіа-холдинг CID Media Group, 2003-2021.<br/>
-            Усі права захищені.
-          </p>
+          <div class="copyright">
+            <p>
+              © Медіа-холдинг CID Media Group, 2003-2021.<br />Усі права
+              захищені.
+            </p>
+          </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- BOOTSTRAP JS -->
     <script
@@ -286,5 +551,8 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+
+    <!-- MY -->
+    <script src="./script/script.js"></script>
   </body>
 </html>

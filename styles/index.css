@@ -773,7 +773,7 @@ main .third-section .slider-container .carousel-control-prev {
     justify-content: center;
   }
   main .sixth-section .container-lg .pp-container .img-container .img-text {
-    font-size: 5vw;
+    font-size: 3vw;
     line-height: 1.5em;
   }
 }
@@ -806,6 +806,9 @@ main .third-section .slider-container .carousel-control-prev {
     grid-template-columns: auto;
     grid-gap: 4vw;
     justify-content: center;
+  }
+  main .sixth-section .container-lg .pp-container .img-container .img-text {
+    font-size: 5vw;
   }
 
   footer .container-lg .row {

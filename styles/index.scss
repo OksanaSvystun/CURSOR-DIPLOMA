@@ -39,6 +39,7 @@ header {
     font-size: 1.13em;
     font-weight: 600;
     z-index: 1;
+    overflow-x: hidden;
     .navbar-expand-lg {
       justify-content: space-between;
     }
@@ -111,6 +112,7 @@ header {
     background: transparent url(../img/elipsis-1.png) no-repeat center;
     background-size: contain;
     min-height: 45vw;
+    overflow-x: hidden;
     .row {
       min-height: 45em;
       .text {
@@ -202,6 +204,7 @@ header {
 }
 
 main {
+  overflow-x: hidden;
   .third-section {
     margin: 5vw 0;
     display: flex;
@@ -211,6 +214,7 @@ main {
     max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
+    overflow-x: hidden;
     .slider-container {
       margin-top: 2em;
       .icon {
@@ -584,6 +588,7 @@ footer {
     width: 10%;
     order: 1;
   }
+
 }
 @media (max-width: 992px) {
   header {
@@ -608,6 +613,7 @@ footer {
   }
   main {
     .sixth-section {
+      text-align: center;
       .container-lg {
         padding: 1em;
         .pp-container {

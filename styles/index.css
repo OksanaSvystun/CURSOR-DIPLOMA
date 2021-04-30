@@ -216,6 +216,7 @@ header .navigation {
   font-size: 1.13em;
   font-weight: 600;
   z-index: 1;
+  overflow-x: hidden;
 }
 header .navigation .navbar-expand-lg {
   justify-content: space-between;
@@ -284,6 +285,7 @@ header .first-section {
   background: transparent url(../img/elipsis-1.png) no-repeat center;
   background-size: contain;
   min-height: 45vw;
+  overflow-x: hidden;
 }
 header .first-section .row {
   min-height: 45em;
@@ -365,6 +367,9 @@ header .second-section .container-lg .song-card-title {
   text-overflow: ellipsis;
 }
 
+main {
+  overflow-x: hidden;
+}
 main .third-section {
   margin: 5vw 0;
   display: flex;
@@ -374,6 +379,7 @@ main .third-section {
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
+  overflow-x: hidden;
 }
 main .third-section .slider-container {
   margin-top: 2em;
@@ -755,6 +761,9 @@ main .third-section .slider-container .carousel-control-prev {
     margin-top: 2em;
   }
 
+  main .sixth-section {
+    text-align: center;
+  }
   main .sixth-section .container-lg {
     padding: 1em;
   }

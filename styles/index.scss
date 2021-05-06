@@ -125,6 +125,8 @@ header {
     // background-size: contain;
     // min-height: 45vw;
     // overflow-x: hidden;
+    position: relative;
+    z-index: 5;
     .row {
       min-height: 39em;
       padding-top: 8vw;

@@ -295,6 +295,10 @@ header .navigation .navbar-player .player-headline .headline-title {
   display: inline-block;
   text-overflow: ellipsis;
 }
+header .first-section {
+  position: relative;
+  z-index: 5;
+}
 header .first-section .row {
   min-height: 39em;
   padding-top: 8vw;

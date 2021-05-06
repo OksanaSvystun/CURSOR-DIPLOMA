@@ -2,8 +2,10 @@
 https://toughengineer.github.io/demo/slider-styler*/
 input[type=range].styled-slider {
   height: 10px;
+  width: 95%;
   -webkit-appearance: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /*progress support*/

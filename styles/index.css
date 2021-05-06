@@ -573,27 +573,27 @@ main .seventh-section .container-lg .row .card .card-body span {
   font-size: 0.88em;
 }
 main .seventh-section .container-lg .row .card1 {
-  background: #fff url(../img/news/news1.jpg) no-repeat right top;
+  background: #fff url(../img/news/news1.webp) no-repeat right top;
   background-size: contain;
 }
 main .seventh-section .container-lg .row .card1:hover {
-  background: #fff url(../img/news/news1.jpg) no-repeat right top;
+  background: #fff url(../img/news/news1.webp) no-repeat right top;
   background-size: contain;
 }
 main .seventh-section .container-lg .row .card2 {
-  background: #fff url(../img/news/news2.jpg) no-repeat right top;
+  background: #fff url(../img/news/news2.webp) no-repeat right top;
   background-size: contain;
 }
 main .seventh-section .container-lg .row .card2:hover {
-  background: #fff url(../img/news/news1.jpg) no-repeat right top;
+  background: #fff url(../img/news/news1.webp) no-repeat right top;
   background-size: contain;
 }
 main .seventh-section .container-lg .row .card3 {
-  background: #fff url(../img/news/news3.jpg) no-repeat right top;
+  background: #fff url(../img/news/news3.webp) no-repeat right top;
   background-size: contain;
 }
 main .seventh-section .container-lg .row .card3:hover {
-  background: #fff url(../img/news/news1.jpg) no-repeat right top;
+  background: #fff url(../img/news/news1.webp) no-repeat right top;
   background-size: contain;
 }
 
